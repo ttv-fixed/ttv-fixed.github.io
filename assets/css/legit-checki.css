@@ -1,0 +1,23 @@
+body {
+    background: black;
+    font-family: 'Sen', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #909090;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 15px;
+    font-weight: 400;
+    color: #909090;
+    text-align: center;
+  }
+  
+  footer a {
+    font-weight: 700;
+  }
