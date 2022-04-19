@@ -1,3 +1,78 @@
+/* preloader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; }
+
+.ttv-fixed_preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background-color: #0d1017;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.ttv-fixed_preloader .ttv-fixed_pasek .kropka {
+	background-color: #c41229;
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	display: inline-block;
+	-webkit-animation: stretchdelay 0.7s infinite ease-in-out;
+	animation: stretchdelay 0.7s infinite ease-in-out;
+}
+
+.ttv-fixed_preloader_ukrywanie .ttv-fixed_preloader {
+	transition: 2s opacity;
+	opacity: 0;
+}
+
+.ttv-fixed_preloader_ukryte .ttv-fixed_preloader {
+	display: none;
+}
+
+.ttv-fixed_preloader .ttv-fixed_pasek .kropka:nth-child(1) {
+	-webkit-animation-delay: -0.6s;
+	animation-delay: -0.6s;
+}
+
+.ttv-fixed_preloader .ttv-fixed_pasek .kropka:nth-child(2) {
+	-webkit-animation-delay: -0.5s;
+	animation-delay: -0.5s;
+}
+
+.ttv-fixed_preloader .ttv-fixed_pasek .kropka:nth-child(3) {
+	-webkit-animation-delay: -0.4s;
+	animation-delay: -0.4s;
+}
+
+.ttv-fixed_preloader .ttv-fixed_pasek .kropka:nth-child(4) {
+	-webkit-animation-delay: -0.3s;
+	animation-delay: -0.3s;
+}
+
+.ttv-fixed_preloader .ttv-fixed_pasek .kropka:nth-child(5) {
+	-webkit-animation-delay: -0.2s;
+	animation-delay: -0.2s;
+}
+        
+@keyframes stretchdelay {
+0%,
+40%,
+100% {
+	transform: translateY(-10px);
+	-webkit-transform: translateY(-10px);
+}
+20% {
+	transform: translateY(-20px);
+	-webkit-transform: translateY(-20px);
+}
+}
+
 ::-webkit-scrollbar {
   width: 6px !important;
   height: 6px !important;
